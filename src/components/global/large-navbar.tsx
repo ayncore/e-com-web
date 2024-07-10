@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import ayncore from "../../../../public/ayncorelogo.png";
-import logo from "../../../../public/ayncoreicon.png";
+import ayncore from "@/assets/ayncorelogo.png";
+import logo from "@/assets/ayncoreicon.png";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
 const Navbar: React.FC = () => {

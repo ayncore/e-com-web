@@ -1,5 +1,5 @@
 'use client';
-import logo from "../../../../public/ayncoreicon.png";
+import logo from "@/assets/ayncoreicon.png";
 import { FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
