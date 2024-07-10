@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "AYNcore E-commerce",
-  description: "NEXTJS",
+  description: "Made with AYNcore",
 };
 
 export default function RootLayout({
