@@ -4,9 +4,11 @@ import ayncore from "@/assets/ayncorelogo.png";
 import logo from "@/assets/ayncoreicon.png";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
-const Navbar: React.FC = () => {
-  const currentuser = true;
+interface NavbarProps {
+  currentuser?: boolean;
+}
 
+const Navbar: React.FC<NavbarProps> = ({ currentuser = true }) => {
   return (
     <nav className='flex justify-between items-center bg-[#1a1a1a] text-white p-4 px-20'>
       {/* Left side: Logo */}
@@ -23,14 +25,6 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Right side: Navbar links */}
-      {/* <ul className="flex space-x-4">
-                {navbarLinks.map((link, index) => (
-                    <li key={index}>
-                        <a href={link.url} className="hover:text-gray-300">{link.text}</a>
-                    </li>
-                ))}
-            </ul> */}
-
       <div className='flex items-center space-x-8'>
         <div className='cursor-pointer'>
           <HiOutlineShoppingCart />
@@ -42,7 +36,7 @@ const Navbar: React.FC = () => {
         ) : (
           <Image
             src={logo}
-            alt=''
+            alt='Profile'
             height={40}
             width={40}
             className='object-cover rounded-full cursor-pointer'
