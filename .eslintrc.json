@@ -8,8 +8,8 @@
     "plugin:jsx-a11y/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "plugin:import/typescript",
-    "plugin:prettier/recommended"
+    "plugin:import/typescript"
+    // "plugin:prettier/recommended"
   ],
   "plugins": [
     "@typescript-eslint",
@@ -61,16 +61,6 @@
           ["internal", "sibling", "parent", "index"]
         ],
         "newlines-between": "always"
-      }
-    ],
-    "prettier/prettier": [
-      "error",
-      {
-        "singleQuote": false,
-        "semi": true,
-        "trailingComma": "all",
-        "printWidth": 80,
-        "tabWidth": 2
       }
     ]
   }
