@@ -6,8 +6,11 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
+      <div className="md:mx-24 mx-10">
       <Testimonials />
       <NewsLetter />
+      </div>
+     
     </div>
   );
 }
