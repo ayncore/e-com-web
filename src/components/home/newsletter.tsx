@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import character from "@/assets/ayncorelogo.png";
 import { IoMdArrowRoundForward } from "react-icons/io";
+import character from "@/assets/character.png"
 
 const NewsLetter = () => {
   return (
