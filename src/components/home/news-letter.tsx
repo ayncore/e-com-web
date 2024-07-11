@@ -10,7 +10,7 @@ const NewsLetter = () => {
         <h1 className="text-black font-semibold text-5xl max-w-lg">
           Don't miss out on special offers
         </h1>
-        <p className="text-md max-w-lg text-neutral-500 font-medium mt-5">
+        <p className="text-md max-w-lg text-neutral-500 font-medium mt-10">
           Register to receive news about the latest, savings combos, discount
           codes...
         </p>
