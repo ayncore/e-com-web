@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import ayncore from "@/assets/ayncorewhite.png";
-import logo from "@/assets/ayncoreicon.png";
+import ayncore from "@/assets/company/ayncorewhite.png";
+import logo from "@/assets/company/ayncorewhiteicon.png";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
 interface NavbarProps {
