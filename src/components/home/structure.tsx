@@ -1,6 +1,6 @@
 import React from "react";
 import structure from "@/assets/structure/delivery.png";
-import delivery from "@/assets/structure/delivery.png"
+import delivery from "@/assets/structure/delivery.png";
 import Image from "next/image";
 
 const Structure = () => {
@@ -35,20 +35,41 @@ const Structure = () => {
     },
   ];
 
+  const getColorClass = (index: number) => {
+    switch (index) {
+      case 0:
+        return "bg-red-100 text-red-800";
+      case 1:
+        return "bg-green-100 text-green-800";
+      case 2:
+        return "bg-blue-100 text-blue-800";
+      case 3:
+        return "bg-purple-100 text-purple-800";
+      default:
+        return "";
+    }
+  };
+
   return (
-    <div className="structure py-10">
-      <div className="grid grid-cols-4 gap-5">
+    <div className="structure py-20">
+      <div className="mx-auto grid w-full grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4 text-center py-10">
         {data.map((item, index) => (
           <div
             key={item.id}
             className="flex flex-col items-center justify-center mx-auto"
           >
             <Image src={item.img} alt={item.title} className="p-5" />
-            <div className={`px-3 py-1 rounded-full mt-5 bg-blue-200`}>
+            <div
+              className={`px-3 py-1 rounded-full mt-5 text-sm font-medium ${getColorClass(index)}`}
+            >
               Step {index + 1}
             </div>
-            <h1 className="text-xl font-semibold text-neutral-800 py-5">{item.title}</h1>
-            <p className="text-base font-medium text-neutral-500">{item.desc}</p>
+            <h1 className="text-xl font-semibold text-neutral-800 py-5 uppercase">
+              {item.title}
+            </h1>
+            <p className="text-md font-medium text-neutral-500">
+              {item.desc}
+            </p>
           </div>
         ))}
       </div>
