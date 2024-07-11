@@ -1,5 +1,5 @@
 'use client';
-import logo from "@/assets/ayncoreicon.png";
+import logo from "@/assets/ayncorewhiteicon.png";
 import { FaLinkedin } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import { BsTwitterX } from "react-icons/bs";
@@ -62,8 +62,7 @@ const Footer = () => {
                 </div>
               </Link>
               <div className='py-2 text-md flex items-center gap-1 font-medium'>
-                &copy; AYNcore
-                {currentYear}. All Rights Reserved.
+                &copy; AYNcore {currentYear}. All Rights Reserved.
               </div>
             </div>
           </div>
