@@ -10,7 +10,7 @@ const Discover = () => {
         <h1 className={`${styles.sectionHeadText}`}>
         Discover more.{" "}
           <span className={`${styles.sectionSubText}`}>
-          Good things are waiting for you.
+          Good things are waiting for you
           </span>
         </h1>
         <div className="icons flex items-center gap-5 justify-between lg:justify-normal mt-5 lg:mt-0">

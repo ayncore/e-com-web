@@ -10,7 +10,7 @@ const NewArrivals = () => {
         <h1 className={`${styles.sectionHeadText}`}>
           New Arrivals.{" "}
           <span className={`${styles.sectionSubText}`}>
-          REY backpacks & bags.
+          REY backpacks & bags
           </span>
         </h1>
         <div className="icons flex items-center gap-5 justify-between lg:justify-normal mt-5 lg:mt-0">

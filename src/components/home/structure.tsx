@@ -56,14 +56,14 @@ const Structure = () => {
           >
             <Image src={item.img} alt={item.title} className="" />
             <div
-              className={`px-3 py-1 rounded-full mt-5 text-lg lg:text-md font-medium ${getColorClass(index)}`}
+              className={`px-4 py-1 rounded-full mt-5 text-lg lg:text-md font-medium ${getColorClass(index)}`}
             >
               Step {index + 1}
             </div>
-            <h1 className="text-3xl lg:text-2xl font-semibold text-neutral-800 py-5 uppercase tracking-wide">
+            <h1 className="text-2xl lg:text-2xl font-semibold text-neutral-800 mt-10 py-2 uppercase tracking-wide">
               {item.title}
             </h1>
-            <p className="text-xl lg:text-lg font-medium text-neutral-500 max-w-xs">
+            <p className="text-lg lg:text-lg font-medium text-neutral-500 max-w-xs">
               {item.desc}
             </p>
           </div>

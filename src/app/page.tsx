@@ -1,5 +1,7 @@
 import BestSellers from "@/components/home/best-sellers";
 import Discover from "@/components/home/discover";
+import Experts from "@/components/home/experts";
+import Explore from "@/components/home/explore";
 import Hero from "@/components/home/hero";
 import NewArrivals from "@/components/home/new-arrivals";
 import NewsLetter from "@/components/home/news-letter";
@@ -17,10 +19,12 @@ export default function Home() {
         <NewArrivals />
         <Structure />
         <PrimeMembership/>
+        <Explore/>
         <BestSellers />
         <SpecialOffers/>
-        <Testimonials />
+        <Experts/>
         <NewsLetter />
+        <Testimonials />
       </div>
     </div>
   );
