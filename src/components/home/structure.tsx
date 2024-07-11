@@ -9,29 +9,25 @@ const Structure = () => {
       id: 1,
       img: structure,
       title: "Filter & Discover",
-      desc: "Smart filtering and suggestions make it easy to find",
-      color: "red",
+      desc: "Smart filtering and suggestions make it easy to find.",
     },
     {
       id: 2,
       img: structure,
       title: "Add to bag",
-      desc: "Easily select the correct items and add them to the cart",
-      color: "yellow",
+      desc: "Easily select the correct items and add them to the cart.",
     },
     {
       id: 3,
       img: structure,
       title: "Fast shipping",
-      desc: "The carrier will confirm and ship quickly to you",
-      color: "blue",
+      desc: "The carrier will confirm and ship quickly to you.",
     },
     {
       id: 4,
       img: delivery,
       title: "Enjoy the product",
-      desc: "Have fun and enjoy your 5-star quality products",
-      color: "purple",
+      desc: "Have fun and enjoy your 5-star quality products.",
     },
   ];
 
@@ -64,7 +60,7 @@ const Structure = () => {
             >
               Step {index + 1}
             </div>
-            <h1 className="text-xl font-semibold text-neutral-800 py-5 uppercase">
+            <h1 className="text-xl font-semibold text-neutral-800 py-5 uppercase tracking-wide">
               {item.title}
             </h1>
             <p className="text-md font-medium text-neutral-500">
