@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const NewArrivals = () => {
   return (
-    <div className="bestsellers w-full h-full">
+    <div className="bestsellers w-full h-full py-10">
      <div className="flex-row lg:flex items-center justify-between">
         <h1 className={`${styles.sectionHeadText}`}>
           New Arrivals.{" "}
