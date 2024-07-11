@@ -29,17 +29,17 @@ const currentYear = new Date().getFullYear();
 
 const Footer = () => {
   return (
-    <footer className='relative w-full bg-[#1a1a1a] text-white'>
+    <footer className='relative w-full bg-white text-black'>
       <div className='mx-auto w-full max-w-8xl px-8'>
         <div className='mx-auto grid w-full grid-cols-2 gap-8 py-12 md:grid-cols-2 lg:grid-cols-4 text-center'>
           {SITEMAP.map(({ title, links }, key) => (
             <div key={key} className='w-full'>
-              <div className='mb-4 font-bold uppercase text-[#C7AE6A]'>
+              <div className='mb-4 font-bold uppercase text-black'>
                 {title}
               </div>
               <ul className='space-y-1'>
                 {links.map((link, key) => (
-                  <li key={key} className='font-normal text-white'>
+                  <li key={key} className='font-normal text-slate-500'>
                     <a
                       href='#'
                       className='inline-block py-1 pr-2 transition-transform hover:scale-105'
@@ -52,7 +52,7 @@ const Footer = () => {
             </div>
           ))}
         </div>
-        <div className='flex w-full flex-col items-center justify-center border-t border-gray-400 py-4 md:flex-row md:justify-between px-10'>
+        <div className='flex w-full flex-col items-center justify-center border-t border-slate-200 py-4 md:flex-row md:justify-between px-10'>
           <div className='mb-4 text-center md:mb-0'>
             <div className='flex lg:flex-1 items-center'>
               <Link href='/'>
@@ -62,12 +62,12 @@ const Footer = () => {
                 </div>
               </Link>
               <div className='py-2 text-md flex items-center gap-1 font-medium'>
-                &copy; <span className='text-[#C7AE6A]'>AYNcore</span>{' '}
+                &copy; AYNcore
                 {currentYear}. All Rights Reserved.
               </div>
             </div>
           </div>
-          <div className='flex gap-4 text-white sm:justify-center'>
+          <div className='flex gap-4 text-black sm:justify-center'>
             <a
               href='tel:8104799731'
               className='opacity-80 transition-opacity hover:opacity-100'

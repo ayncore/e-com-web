@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ayncore from "@/assets/ayncorelogo.png";
+import ayncore from "@/assets/ayncorewhite.png";
 import logo from "@/assets/ayncoreicon.png";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 
@@ -10,7 +10,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ currentuser = true }) => {
   return (
-    <nav className='flex justify-between items-center bg-[#1a1a1a] text-white p-4 px-20'>
+    <nav className='flex justify-between items-center bg-white text-black p-4 px-20 border-b border-slate-100'>
       {/* Left side: Logo */}
       <div className='flex items-center'>
         <h1 className='text-2xl font-bold'>
