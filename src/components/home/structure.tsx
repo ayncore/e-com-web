@@ -48,22 +48,22 @@ const Structure = () => {
 
   return (
     <div className="structure py-20">
-      <div className="mx-auto grid w-full grid-cols-2 gap-8 md:grid-cols-2 lg:grid-cols-4 text-center py-10">
+      <div className="mx-auto grid w-full grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 text-center py-10">
         {data.map((item, index) => (
           <div
             key={item.id}
             className="flex flex-col items-center justify-center mx-auto"
           >
-            <Image src={item.img} alt={item.title} className="p-5" />
+            <Image src={item.img} alt={item.title} className="" />
             <div
-              className={`px-3 py-1 rounded-full mt-5 text-sm font-medium ${getColorClass(index)}`}
+              className={`px-3 py-1 rounded-full mt-5 text-lg lg:text-md font-medium ${getColorClass(index)}`}
             >
               Step {index + 1}
             </div>
-            <h1 className="text-xl font-semibold text-neutral-800 py-5 uppercase tracking-wide">
+            <h1 className="text-3xl lg:text-2xl font-semibold text-neutral-800 py-5 uppercase tracking-wide">
               {item.title}
             </h1>
-            <p className="text-md font-medium text-neutral-500">
+            <p className="text-xl lg:text-lg font-medium text-neutral-500 max-w-xs">
               {item.desc}
             </p>
           </div>
