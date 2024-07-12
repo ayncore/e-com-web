@@ -8,7 +8,8 @@ const NewsLetter = () => {
     <div className="newsletter h-full max-w-8xl bg-slate-100 rounded-xl my-10 flex justify-between flex-col lg:flex-row">
       <div className="left flex-1 p-16">
         <h1 className="text-black font-semibold text-5xl max-w-lg">
-          Don't miss out on special offers
+          Don&apos;t miss out on special offers
+
         </h1>
         <p className="text-md max-w-lg text-neutral-500 font-medium mt-5">
           Register to receive news about the latest, savings combos, discount
@@ -42,9 +43,9 @@ const NewsLetter = () => {
             required
             aria-required
           />
-         <button className="bg-black text-white rounded-full flex items-center justify-center right-1 absolute transform top-1/2 -translate-y-1/2 p-1">
-            <IoMdArrowRoundForward className="w-6 h-6"/>
-         </button>
+          <button className="bg-black text-white rounded-full flex items-center justify-center right-1 absolute transform top-1/2 -translate-y-1/2 p-1">
+            <IoMdArrowRoundForward className="w-6 h-6" />
+          </button>
         </form>
       </div>
       <div className="right flex-1">

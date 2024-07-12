@@ -1,7 +1,7 @@
+/* eslint-disable no-unused-vars */
 'use client'
 import React, { useState, useRef, useEffect } from 'react';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-
 
 interface Option {
     value: string;

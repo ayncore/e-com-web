@@ -1,6 +1,5 @@
 import React from "react";
 import structure from "@/assets/structure/delivery.png";
-import delivery from "@/assets/structure/delivery.png";
 import Image from "next/image";
 
 const Structure = () => {
@@ -28,7 +27,7 @@ const Structure = () => {
     },
     {
       id: 4,
-      img: delivery,
+      img: structure,
       title: "Enjoy the product",
       desc: "Have fun and enjoy your 5-star quality products",
       color: "purple",
