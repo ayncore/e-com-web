@@ -1,49 +1,88 @@
-import Image from "next/image";
 import React from "react";
-import ayncore from "@/assets/company/ayncorewhite.png";
-import logo from "@/assets/company/ayncorewhiteicon.png";
-import { HiOutlineShoppingCart } from "react-icons/hi";
+import Link from "next/link";
+import { LuSearch, LuUser2, LuShoppingCart } from "react-icons/lu";
+
+import MaxWidthWrapper from "../layout/max-width-wrapper";
+import { Input } from "../ui/Input";
+import { Button } from "../ui/button";
+import LanguageSwitcher from "../ui/LanguageSwitcher";
+import { cls } from "../../utils/cls";
+
 
 interface NavbarProps {
   currentuser?: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ currentuser = true }) => {
-  return (
-    <nav className='flex justify-between items-center bg-white text-black p-4 px-20 border-b border-slate-100'>
-      {/* Left side: Logo */}
-      <div className='flex items-center'>
-        <h1 className='text-2xl font-bold'>
-          <Image
-            src={ayncore}
-            height={200}
-            width={200}
-            alt='AYNcore'
-            className=''
-          />
-        </h1>
-      </div>
+export interface NavbarInterface {
+  name?: string;
+  className?: string;
 
-      {/* Right side: Navbar links */}
-      <div className='flex items-center space-x-8'>
-        <div className='cursor-pointer'>
-          <HiOutlineShoppingCart />
+  link?: string;
+  onClick?: string;
+  icon?: React.ReactNode | string;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ currentuser = true }) => {
+
+
+  const navbarButton: NavbarInterface[] = [
+    {
+      icon: <LanguageSwitcher />,
+      className: "hidden md:block"
+    },
+    {
+      icon: currentuser ? <LuUser2 /> : "Login",
+      link: "profile",
+    },
+    {
+      icon: <LuShoppingCart />,
+      link: "cart",
+    },
+  ];
+
+  return (
+    <MaxWidthWrapper className="lg:py-4 py-2 flex items-center justify-center  ">
+
+      <nav className="w-full  flex justify-between gap-10 items-center   ">
+        <div className="flex text-2xl items-center">
+          <Link href="/">
+            <span>
+              Anycore
+            </span>
+          </Link>
+          {/* <Image src={ayncore} height={40} width={100} alt="AYNcore" /> */}
         </div>
-        {!currentuser ? (
-          <button className='bg-white text-black px-4 py-2 rounded-md'>
-            Login
-          </button>
-        ) : (
-          <Image
-            src={logo}
-            alt='Profile'
-            height={40}
-            width={40}
-            className='object-cover rounded-full cursor-pointer'
-          />
-        )}
-      </div>
-    </nav>
+
+        <div className="flex relative items-center w-full space-x-8">
+          <Input placeholder="search..." className="rounded-sm w-full h-10 px-4" />
+          <Button
+            className=" 
+            bg-red-500
+            absolute 
+            right-0 
+            text-white
+            inset-y-0
+            p-4
+            flex
+            items-center justify-center
+            "
+
+          >
+            <LuSearch />
+          </Button>
+        </div>
+
+        <div className="flex items-center space-x-2">
+
+          {navbarButton.map((navButton, index) => (
+            <Link href={`/${navButton.link}`} key={index}
+              className={cls(" hover:text-gray-500 transition-all ease-in-out duration-700 text-xl", navButton.className)}>
+              {navButton.icon}
+            </Link>
+          ))}
+        </div>
+      </nav>
+    </MaxWidthWrapper>
   );
 };
 
