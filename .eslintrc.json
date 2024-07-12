@@ -40,7 +40,7 @@
     "no-undef": "error",
     "no-duplicate-imports": "error",
     "@typescript-eslint/no-unused-vars": ["error"],
-    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
     "react-hooks/rules-of-hooks": "error",
@@ -51,16 +51,6 @@
         "components": ["Link"],
         "specialLink": ["hrefLeft", "hrefRight"],
         "aspects": ["invalidHref", "preferButton"]
-      }
-    ],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          ["builtin", "external"],
-          ["internal", "sibling", "parent", "index"]
-        ],
-        "newlines-between": "always"
       }
     ]
   }

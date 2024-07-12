@@ -1,8 +1,7 @@
 'use client';
 import logo from "@/assets/company/ayncorewhiteicon.png";
 import { FaLinkedin } from "react-icons/fa";
-import { BsInstagram } from "react-icons/bs";
-import { BsTwitterX } from "react-icons/bs";
+import { BsInstagram, BsTwitterX } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -40,12 +39,12 @@ const Footer = () => {
               <ul className='space-y-1'>
                 {links.map((link, key) => (
                   <li key={key} className='font-normal text-slate-500'>
-                    <a
-                      href='#'
+                    <Link
+                      href={`/${link}`}
                       className='inline-block py-1 pr-2 transition-transform hover:scale-105'
                     >
                       {link}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -67,26 +66,26 @@ const Footer = () => {
             </div>
           </div>
           <div className='flex gap-4 text-black sm:justify-center'>
-            <a
+            <Link
               href='tel:8104799731'
               className='opacity-80 transition-opacity hover:opacity-100'
             >
               <BsInstagram size={20} />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href='mailto:1032201286@tcetmumbai.in'
               className='opacity-80 transition-opacity hover:opacity-100'
             >
               <BsTwitterX size={20} />
-            </a>
+            </Link>
 
-            <a
+            <Link
               href='https://yash-portfolio-six.vercel.app'
               className='opacity-80 transition-opacity hover:opacity-100'
             >
               <FaLinkedin size={20} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
