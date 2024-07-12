@@ -3,6 +3,7 @@ import React from 'react';
 
 const ProductView = () => {
   return (
+    <>
     <div className=" py-4 mx-auto lg:max-w-7xl sm:max-w-full">
       <h2 className="text-4xl font-extrabold text-gray-800 mb-12">Premium Sneakers</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" >
@@ -361,6 +362,7 @@ const ProductView = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
