@@ -12,20 +12,22 @@ import Testimonials from "@/components/home/testimonials";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-white">
       <Hero />
       <div className="md:mx-24 mx-10">
         <Discover/>
         <NewArrivals />
         <Structure />
         <PrimeMembership/>
+      </div>
         <Explore/>
+        <div className="md:mx-24 mx-10">
         <BestSellers />
         <SpecialOffers/>
         <Experts/>
         <NewsLetter />
         <Testimonials />
-      </div>
+        </div>
     </div>
   );
 }
