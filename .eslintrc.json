@@ -52,16 +52,7 @@
         "specialLink": ["hrefLeft", "hrefRight"],
         "aspects": ["invalidHref", "preferButton"]
       }
-    ],
-    "import/order": [
-      "error",
-      {
-        "groups": [
-          ["builtin", "external"],
-          ["internal", "sibling", "parent", "index"]
-        ],
-        "newlines-between": "always"
-      }
     ]
+   
   }
 }
