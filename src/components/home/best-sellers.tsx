@@ -9,7 +9,7 @@ const BestSellers = () => {
         <h1 className={`${styles.sectionHeadText}`}>
           Best Sellers.{" "}
           <span className={`${styles.sectionSubText}`}>
-            Best selling of the month.
+            Best selling of the month
           </span>
         </h1>
         <div className="icons flex items-center gap-5 justify-between lg:justify-normal mt-5 lg:mt-0">
