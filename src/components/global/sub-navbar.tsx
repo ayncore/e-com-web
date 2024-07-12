@@ -55,17 +55,17 @@ const SubNavbar: React.FC = () => {
     return (
         <MaxWidthWrapper className="lg:py-4 py-4 flex items-center justify-center  ">
 
-            <nav className="w-full   flex justify-between items-center   ">
+            <nav className="w-full   flex justify-between  hover:text-gray-500 cursor-pointer transition-all ease-in-out duration-500 items-center   ">
                 {/* Left side: Logo */}
                 <div className="flex gap-10 w-fit items-center">
                     <span className="hidden md:block">
                         All Categoris
                     </span>
-                    <BiMenu />
+                    <BiMenu size={25} />
                 </div>
 
                 {/* Center: SubNavbar links */}
-                <div className="flex items-center w-f mx-auto   text font-semibold space-x-8">
+                <div className="hidden md:flex items-center w-f mx-auto   text font-semibold space-x-8">
                     {navbarLink.map((navLink, index) => (
                         <Link href={`/${navLink.link}`} key={index}
                             className=" hover:text-gray-500 transiton-all ease-in-out duration-500">{navLink.name}

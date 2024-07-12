@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import React from 'react';
+import { Image } from 'next/image';
 
-const ProductView: React.FC = () => {
+const ProductView= () => {
   return (
 <div className=" py-4 mx-auto lg:max-w-7xl sm:max-w-full">
       <h2 className="text-4xl font-extrabold text-gray-800 mb-12">Premium Sneakers</h2>
@@ -19,7 +19,7 @@ const ProductView: React.FC = () => {
           </div>
 
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product9.webp" alt="Product 1"
+            <Image width={100} height={100}  src="https://readymadeui.com/images/product9.webp" alt="Product 1"
               className="h-full w-full object-contain" />
           </div>
 
@@ -64,7 +64,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product10.webp" alt="Product 2"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product10.webp" alt="Product 2"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
@@ -108,7 +108,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product11.webp" alt="Product 3"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product11.webp" alt="Product 3"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
@@ -152,7 +152,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product12.webp" alt="Product 3"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product12.webp" alt="Product 3"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
@@ -196,7 +196,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product13.webp" alt="Product 3"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product13.webp" alt="Product 3"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
@@ -240,7 +240,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product14.webp" alt="Product 3"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product14.webp" alt="Product 3"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
@@ -284,7 +284,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product15.webp" alt="Product 3"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product15.webp" alt="Product 3"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
@@ -328,7 +328,7 @@ const ProductView: React.FC = () => {
             </svg>
           </div>
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image src="https://readymadeui.com/images/product10.webp" alt="Product 3"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product10.webp" alt="Product 3"
               className="h-full w-full object-contain" />
           </div>
           <div className="p-6 bg-white">
