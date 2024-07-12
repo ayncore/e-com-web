@@ -9,12 +9,12 @@ const Productdetails = () => {
 
                   <div className="w-full lg:sticky top-0 sm:flex gap-2">
                       <div className="sm:space-y-3 w-16 max-sm:w-12 max-sm:flex max-sm:mb-4 max-sm:gap-4">
-                          <Image src="https://readymadeui.com/images/product1.webp" alt="Product1" className="w-full cursor-pointer rounded-md outline"  />
-                          <Image src="https://readymadeui.com/images/product6.webp" alt="Product2" className="w-full cursor-pointer rounded-md"  />
-                          <Image src="https://readymadeui.com/images/product7.webp" alt="Product3" className="w-full cursor-pointer rounded-md"  />
-                          <Image src="https://readymadeui.com/images/product3.webp" alt="Product4" className="w-full cursor-pointer rounded-md"  />
+                          <Image width={100} height={100}  src="https://readymadeui.com/images/product1.webp" alt="Product1" className="w-full cursor-pointer rounded-md outline"  />
+                          <Image width={100} height={100} src="https://readymadeui.com/images/product6.webp" alt="Product2" className="w-full cursor-pointer rounded-md"  />
+                          <Image width={100} height={100} src="https://readymadeui.com/images/product7.webp" alt="Product3" className="w-full cursor-pointer rounded-md"  />
+                          <Image width={100} height={100} src="https://readymadeui.com/images/product3.webp" alt="Product4" className="w-full cursor-pointer rounded-md"  />
                       </div>
-                      <Image src="https://readymadeui.com/images/product2.webp" alt="Product" className="w-4/5 rounded-md object-cover"  />
+                      <Image width={100} height={100} src="https://readymadeui.com/images/product2.webp" alt="Product" className="w-4/5 rounded-md object-cover"  />
                   </div>
 
                   <div>
