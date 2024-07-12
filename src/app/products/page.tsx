@@ -1,16 +1,20 @@
 import React from "react"
 
-import Productdetails from "../../components/product/Productdetails"
+// import Productdetails from "@/components/product/Productdetails"
+import Filter from "@/components/product/Filter"
 
 
 const Product = () => {
     return (
-        <div className="font-sans">
-            <div className="p-4 lg:max-w-5xl max-w-lg mx-auto">
-                <div className="grid items-start grid-cols-1 lg:grid-cols-2 gap-6 max-lg:gap-12">`
-                    <Productdetails />
-                </div>
-            </div>
+        <div className="mx-auto ">
+           
+            {/* <div className="flex-[2]"> */}
+                <Filter/>
+           
+            {/* </div> */}
+
+
+            {/* <Productdetails/> */}
         </div>
     )
 }

@@ -1,12 +1,12 @@
+import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
-import { Image } from 'next/image';
 
-const ProductView= () => {
+const ProductView = () => {
   return (
-<div className=" py-4 mx-auto lg:max-w-7xl sm:max-w-full">
+    <div className=" py-4 mx-auto lg:max-w-7xl sm:max-w-full">
       <h2 className="text-4xl font-extrabold text-gray-800 mb-12">Premium Sneakers</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4" >
         <div
           className="bg-gray-50 shadow-md overflow-hidden rounded-lg cursor-pointer hover:-translate-y-2 transition-all relative">
           <div
@@ -19,7 +19,7 @@ const ProductView= () => {
           </div>
 
           <div className="w-5/6 h-[260px] p-4 overflow-hidden mx-auto aspect-w-16 aspect-h-8">
-            <Image width={100} height={100}  src="https://readymadeui.com/images/product9.webp" alt="Product 1"
+            <Image width={100} height={100} src="https://readymadeui.com/images/product9.webp" alt="Product 1"
               className="h-full w-full object-contain" />
           </div>
 
@@ -51,8 +51,8 @@ const ProductView= () => {
               </svg>
             </div>
           </div>
-        </div>
 
+        </div>
         <div
           className="bg-gray-50 shadow-md overflow-hidden rounded-lg cursor-pointer hover:-translate-y-2 transition-all relative">
           <div
