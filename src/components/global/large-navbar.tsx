@@ -1,8 +1,9 @@
 import Image from "next/image";
 import React from "react";
+import { HiOutlineShoppingCart } from "react-icons/hi";
+
 import ayncore from "@/assets/company/ayncorewhite.png";
 import logo from "@/assets/company/ayncorewhiteicon.png";
-import { HiOutlineShoppingCart } from "react-icons/hi";
 
 interface NavbarProps {
   currentuser?: boolean;
