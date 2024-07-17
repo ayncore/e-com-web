@@ -53,7 +53,7 @@ const SubNavbar: React.FC = () => {
 
 
     return (
-        <MaxWidthWrapper className="lg:py-4 py-4 flex items-center justify-center  ">
+        <MaxWidthWrapper className="lg:py-4 py-4 flex items-center justify-center">
 
             <nav className="w-full   flex justify-between  hover:text-gray-500 cursor-pointer transition-all ease-in-out duration-500 items-center   ">
                 {/* Left side: Logo */}
