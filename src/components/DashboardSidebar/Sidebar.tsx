@@ -21,7 +21,7 @@ const Sidebar = () => {
       </button>
 
       <nav
-        className={`shadow-lg bg-white rounded-xl min-w-[220px] py-6 px-6 font-[sans-serif] flex flex-col overflow-auto fixed top-0 h-screen z-40 transition-transform transform ${
+        className={`shadow-lg bg-white rounded-xl min-w-[220px] py-6 px-6  flex flex-col overflow-auto fixed top-0 h-screen z-40 transition-transform transform ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         } md:relative md:translate-x-0`}
       >
